@@ -1,0 +1,70 @@
+.supp-container {
+  width: 100%;
+  height: 200px;
+  background: #e8fbff;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.supp-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 254px;
+  position: relative;
+}
+
+h1 span {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: #000;
+}
+
+h1 span::before,
+h1 span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #d25235; /* Orange underline */
+  left: 0;
+}
+
+h1 span::before {
+  bottom: -5px; /* First line closer to text */
+}
+
+h1 span::after {
+  bottom: -5px; /* Second line slightly below the first */
+}
+
+.supp-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 254px;
+  position: relative;
+}
+
+.supp-right button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-align: center;
+  width: 216px;
+  height: 54px;
+  background: #eb7150;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  align-items: Center;
+  border-radius: 5px 5px 5px 5px;
+  border: #eb7150;
+}
